@@ -1,97 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.9 on darwin)" generated="2024-06-29T11:48:18.272637" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="/Users/chinmay/Desktop/Python-Robot/Robotframework1/Tests">
-<suite id="s1-s1" name="Saucelab" source="/Users/chinmay/Desktop/Python-Robot/Robotframework1/Tests/saucelab.robot">
-<test id="s1-s1-t1" name="Login Page" line="10">
+<robot generator="Robot 7.0 (Python 3.11.9 on darwin)" generated="2024-06-29T15:59:18.409668" rpa="false" schemaversion="5">
+<suite id="s1" name="Saucelab" source="/Users/chinmay/Desktop/Python-Robot/Saucelab/Tests/saucelab.robot">
+<test id="s1-t1" name="Sauce lab buyout" line="11">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-06-29T11:48:18.352532" elapsed="0.000122"/>
+<status status="PASS" start="2024-06-29T15:59:18.627158" elapsed="0.000177"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-06-29T11:48:18.352731" elapsed="0.000077"/>
+<status status="PASS" start="2024-06-29T15:59:18.627456" elapsed="0.000117"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-06-29T11:48:18.352933" level="INFO">starting test case</msg>
+<msg time="2024-06-29T15:59:18.627757" level="INFO">starting test case</msg>
 <arg>starting test case</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-06-29T11:48:18.352882" elapsed="0.000071"/>
+<status status="PASS" start="2024-06-29T15:59:18.627681" elapsed="0.000109"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-29T11:48:18.353079" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>https://www.saucedemo.com/</arg>
-<arg>chrome</arg>
+<msg time="2024-06-29T15:59:18.628018" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-29T11:48:18.353017" elapsed="1.892149"/>
+<status status="PASS" start="2024-06-29T15:59:18.627896" elapsed="2.391168"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-29T15:59:21.019711" elapsed="0.527277"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:21.548601" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${website}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-29T15:59:21.547845" elapsed="0.577666"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-29T11:48:20.663464" level="INFO">Current page contains text 'Swag Labs'.</msg>
+<msg time="2024-06-29T15:59:22.553876" level="INFO">Current page contains text 'Swag Labs'.</msg>
 <arg>Swag Labs</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-29T11:48:20.245582" elapsed="0.418146"/>
+<status status="PASS" start="2024-06-29T15:59:22.125915" elapsed="0.428456"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-29T11:48:20.665083" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2024-06-29T15:59:22.556787" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-29T11:48:20.664246" elapsed="0.815471"/>
+<status status="PASS" start="2024-06-29T15:59:22.555330" elapsed="0.800949"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-29T11:48:21.480167" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2024-06-29T15:59:23.357962" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-29T11:48:21.479993" elapsed="0.683800"/>
+<status status="PASS" start="2024-06-29T15:59:23.357235" elapsed="0.704495"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-29T11:48:22.164692" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2024-06-29T15:59:24.063052" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-29T11:48:22.164320" elapsed="0.711118"/>
+<status status="PASS" start="2024-06-29T15:59:24.062417" elapsed="0.699314"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-29T11:48:22.875866" elapsed="0.214274"/>
+<status status="PASS" start="2024-06-29T15:59:24.762188" elapsed="0.218938"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-06-29T11:48:23.090827" level="INFO">successfully login</msg>
+<msg time="2024-06-29T15:59:24.982170" level="INFO">successfully login</msg>
 <arg>successfully login</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-06-29T11:48:23.090579" elapsed="0.000322"/>
+<status status="PASS" start="2024-06-29T15:59:24.981828" elapsed="0.000418"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:24.982773" level="INFO">Clicking element 'xpath = //div[normalize-space()='Sauce Labs Bolt T-Shirt']'.</msg>
+<arg>xpath = //div[normalize-space()='Sauce Labs Bolt T-Shirt']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:24.982462" elapsed="0.459467"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Sauce Labs Bolt T-Shirt</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-29T15:59:25.442135" elapsed="0.210132"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:25.652638" level="INFO">Clicking element 'xpath= //button[@id='add-to-cart']'.</msg>
+<arg>xpath= //button[@id='add-to-cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:25.652484" elapsed="0.449653"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:26.102836" level="INFO">Clicking element 'xpath= //a[@class='shopping_cart_link']'.</msg>
+<arg>xpath= //a[@class='shopping_cart_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:26.102521" elapsed="0.464949"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-29T15:59:26.567838" elapsed="0.220182"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:26.788783" level="INFO">Clicking button 'id=checkout'.</msg>
+<arg>id=checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:26.788466" elapsed="1.095098"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:27.884255" level="INFO">Typing text 'mitchel' into text field 'id=first-name'.</msg>
+<arg>id=first-name</arg>
+<arg>mitchel</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:27.883936" elapsed="0.698476"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:28.583591" level="INFO">Typing text 'johnson' into text field 'id=last-name'.</msg>
+<arg>id=last-name</arg>
+<arg>johnson</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:28.583016" elapsed="0.694390"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:29.278164" level="INFO">Typing text '20134' into text field 'id=postal-code'.</msg>
+<arg>id=postal-code</arg>
+<arg>20134</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:29.277836" elapsed="0.698086"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:29.977002" level="INFO">Clicking button 'id=continue'.</msg>
+<arg>id=continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:29.976564" elapsed="0.684073"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:31.085326" level="INFO">Current page contains text 'Checkout: Overview'.</msg>
+<arg>Checkout: Overview</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-29T15:59:30.660970" elapsed="0.424512"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:31.086026" level="INFO">Clicking button 'id=finish'.</msg>
+<arg>id=finish</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T15:59:31.085782" elapsed="1.079780"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-29T15:59:32.590419" level="INFO">Current page contains text 'Thank you for your order!'.</msg>
+<arg>Thank you for your order!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-29T15:59:32.165828" elapsed="0.424806"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-29T15:59:32.591271" level="INFO">Order is Successful</msg>
+<arg>Order is Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-29T15:59:32.591048" elapsed="0.000290"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-29T11:48:28.093331" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-06-29T15:59:37.594162" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-29T11:48:23.091111" elapsed="5.002939"/>
+<status status="PASS" start="2024-06-29T15:59:32.591873" elapsed="5.002448"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-29T11:48:28.094939" elapsed="0.273266"/>
+<status status="PASS" start="2024-06-29T15:59:37.594642" elapsed="0.268206"/>
 </kw>
 <doc>Login in Saucelab</doc>
-<tag>1 login smoke</tag>
-<status status="PASS" start="2024-06-29T11:48:18.352134" elapsed="10.016446"/>
+<tag>1</tag>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2024-06-29T15:59:18.626551" elapsed="19.236469"/>
 </test>
 <doc>This is the Suite for Sauce Lab automation testing.</doc>
-<status status="PASS" start="2024-06-29T11:48:18.285827" elapsed="10.083341"/>
-</suite>
-<status status="PASS" start="2024-06-29T11:48:18.273175" elapsed="10.096689"/>
+<status status="PASS" start="2024-06-29T15:59:18.410440" elapsed="19.452889"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1 login smoke</stat>
+<stat pass="1" fail="0" skip="0">1</stat>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Saucelab">Tests.Saucelab</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Saucelab">Saucelab</stat>
 </suite>
 </statistics>
 <errors>
