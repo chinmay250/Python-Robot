@@ -1,7 +1,7 @@
-
 *** Settings ***
-Documentation    Amazon top navigation bar.
+Documentation    Amazon Sign In
 Library    SeleniumLibrary
 
 *** Keywords ***
-Begin Checkout
+Sign In Account
+
