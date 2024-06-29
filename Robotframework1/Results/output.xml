@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.9 on darwin)" generated="2024-06-29T11:48:18.272637" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/chinmay/Desktop/Python-Robot/Robotframework1/Tests">
+<suite id="s1-s1" name="Saucelab" source="/Users/chinmay/Desktop/Python-Robot/Robotframework1/Tests/saucelab.robot">
+<test id="s1-s1-t1" name="Login Page" line="10">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-06-29T11:48:18.352532" elapsed="0.000122"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-06-29T11:48:18.352731" elapsed="0.000077"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-29T11:48:18.352933" level="INFO">starting test case</msg>
+<arg>starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-29T11:48:18.352882" elapsed="0.000071"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-29T11:48:18.353079" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-29T11:48:18.353017" elapsed="1.892149"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-29T11:48:20.663464" level="INFO">Current page contains text 'Swag Labs'.</msg>
+<arg>Swag Labs</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-29T11:48:20.245582" elapsed="0.418146"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-29T11:48:20.665083" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T11:48:20.664246" elapsed="0.815471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-29T11:48:21.480167" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T11:48:21.479993" elapsed="0.683800"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-29T11:48:22.164692" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-29T11:48:22.164320" elapsed="0.711118"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-29T11:48:22.875866" elapsed="0.214274"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-29T11:48:23.090827" level="INFO">successfully login</msg>
+<arg>successfully login</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-29T11:48:23.090579" elapsed="0.000322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-29T11:48:28.093331" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-29T11:48:23.091111" elapsed="5.002939"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-29T11:48:28.094939" elapsed="0.273266"/>
+</kw>
+<doc>Login in Saucelab</doc>
+<tag>1 login smoke</tag>
+<status status="PASS" start="2024-06-29T11:48:18.352134" elapsed="10.016446"/>
+</test>
+<doc>This is the Suite for Sauce Lab automation testing.</doc>
+<status status="PASS" start="2024-06-29T11:48:18.285827" elapsed="10.083341"/>
+</suite>
+<status status="PASS" start="2024-06-29T11:48:18.273175" elapsed="10.096689"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1 login smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Saucelab">Tests.Saucelab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
