@@ -1,7 +1,8 @@
-
 *** Settings ***
-Documentation    Amazon top navigation bar.
 Library    SeleniumLibrary
 
+
 *** Keywords ***
-Begin Checkout
+Verify Page Loaded
+    Wait Until Page Contains    amazon.in
+

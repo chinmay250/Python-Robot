@@ -3,5 +3,5 @@ Documentation    Amazon Sign In
 Library    SeleniumLibrary
 
 *** Keywords ***
-Sign In Account
-
+Verify SignIn Page Loaded
+    Page Should Contain    Sign in

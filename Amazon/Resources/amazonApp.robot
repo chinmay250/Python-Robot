@@ -1,17 +1,29 @@
 *** Settings ***
-Documentation    This is Amazon app suite
-
 Resource    PageObjects/TopNav.robot
+Resource    PageObjects/LandingPage.robot
 Resource    PageObjects/Cart.robot
 Resource    PageObjects/Product.robot
 Resource    PageObjects/SearchResults.robot
 Resource    PageObjects/SignIn.robot
-Resource    PageObjects/TopNav.robot
-
 
 *** Keywords ***
-Open Amazon.com
-    Go To    https://www.amazon.in/
-    Wait Until Page Contains    Navigation Bar
+
+Search For Products
+    LandingPage.Verify Page Loaded
+    TopNav.Search For Products
+    SearchResults.Verify Search Completed
+
+Select Product From Search Results
+    SearchResults.Click Product Link
+    Product.Verify Page Loaded
+
+Add Product To Cart
+    Product.Add To Cart
+    Cart.Verify Product Added
+
+Begin Checkout
+    Cart.Proceed To Checkout
+    SignIn.Verify SignIn Page Loaded
+
 
 
